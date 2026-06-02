@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Tuition Institute</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 8%;
+    background:white;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.hero img{
+    width:500px;
+    max-width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.section{
+    padding:60px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:36px;
+    color:#1e293b;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.contact{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.contact h2{
+    margin-bottom:15px;
+}
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:768px){
+.hero{
+    text-align:center;
+}
+.hero-text h1{
+    font-size:36px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Bright Future Academy</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Quality Education for Classes 1st to 10th</h1>
+        <p>
+            Build a strong academic foundation with experienced teaching,
+            regular tests, doubt sessions, and personalized attention.
+        </p>
+        <a href="#contact" class="btn">Enroll Now</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900"
+         alt="Students Learning">
+</section>
+
+<section class="section" id="courses">
+    <div class="section-title">
+        <h2>Our Courses</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Classes 1st - 5th</h3>
+            <p>Strong foundation in Maths, English, Science and General Studies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Classes 6th - 8th</h3>
+            <p>Concept-based learning with regular practice and assessments.</p>
+        </div>
+
+        <div class="card">
+            <h3>Classes 9th - 10th</h3>
+            <p>Board exam preparation, test series and doubt-solving sessions.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Why Choose Us?</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Experienced Teachers</h3>
+            <p>Qualified educators focused on student success.</p>
+        </div>
+
+        <div class="card">
+            <h3>Regular Tests</h3>
+            <p>Weekly assessments to track progress.</p>
+        </div>
+
+        <div class="card">
+            <h3>Small Batches</h3>
+            <p>Personal attention for every student.</p>
+        </div>
+
+        <div class="card">
+            <h3>Doubt Sessions</h3>
+            <p>Dedicated classes for clearing concepts.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="gallery">
+    <div class="section-title">
+        <h2>Our Learning Environment</h2>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900" alt="">
+        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?w=900" alt="">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=900" alt="">
+        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=900" alt="">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Your Institute Address</p>
+    <p>📞 +91 XXXXX XXXXX</p>
+    <p>✉️ info@brightfutureacademy.com</p>
+</section>
+
+<footer>
+    © 2026 Bright Future Academy | All Rights Reserved
+</footer>
+
+</body>
+</html>
